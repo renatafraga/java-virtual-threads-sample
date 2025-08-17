@@ -5,27 +5,6 @@ Projeto demonstrativo que compara a performance entre **Virtual Threads** e **Sp
 > **📊 RESULTADO OFICIAL (16 Agosto 2025):** Spring MVC + Virtual Threads demonstrou **88% de melhoria** em alta concorrência, processando **18.25 RPS** vs **9.71 RPS** do MVC tradicional. WebFlux manteve performance consistente (~9.84 RPS) com e sem Virtual Threads.
 
 ## 🏆 Resultados Atuais (16 Agosto 2025)
-```
-🔹 SPRING MVC COMPARISON (Virtual Threads vs Tradicional):
-  Tempo Individual:
-    • Sem Virtual Threads: 5,054ms
-    • Com Virtual Threads: 5,060ms
-    • Diferença: 0% (tempo individual similar)
-  
-  🚀 Teste de Carga (100 requisições concorrentes):
-    • Sem Virtual Threads: 10,295ms total (9.71 RPS)
-    • Com Virtual Threads: 5,478ms total (18.25 RPS)
-    • 🎯 Melhoria: 88% mais rápido!
-    • 📈 Throughput: Dobrou o número de requisições por segundo
-
-🔹 SPRING WEBFLUX COMPARISON:
-  🚀 Teste de Carga (100 requisições concorrentes):
-    • Sem Virtual Threads: 10,161ms total (9.84 RPS)
-    • Com Virtual Threads: 10,155ms total (9.84 RPS)
-    • ✅ Resultado: Performance idêntica (WebFlux já é otimizado)
-``` e **Spring WebFlux** através de benchmarks realísticos e automatizados.
-
-## 🏆 Resultados Atuais (16 Agosto 2025)
 
 **🎯 BENCHMARK OFICIAL - Resultados Reais da Aplicação:**
 
