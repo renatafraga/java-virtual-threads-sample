@@ -8,12 +8,12 @@ Projeto demonstrativo que compara a performance entre **Virtual Threads** e **Sp
 
 **🎯 BENCHMARK OFICIAL - Resultados Reais da Aplicação:**
 
-| Tecnologia | Tempo Individual | Carga (100 req) | RPS | Performance |
-|------------|-----------------|------------------|-----|-------------|
-| **🥇 Spring MVC + Virtual Threads** | **5,060ms** | **5,478ms** | **18.25** | **🚀 88% melhor** |
-| Spring MVC Tradicional | 5,054ms | 10,295ms | 9.71 | Baseline |
-| Spring WebFlux + Virtual Threads | 5,064ms | 10,155ms | 9.84 | ⚖️ Sem melhoria |
-| Spring WebFlux Tradicional | 5,058ms | 10,161ms | 9.84 | Baseline |
+| Tecnologia                         | Tempo Individual | Carga (100 req) | RPS       | Performance      |
+| ---------------------------------- | ---------------- | --------------- | --------- | ---------------- |
+| **🥇 Spring MVC + Virtual Threads** | **5,060ms**      | **5,478ms**     | **18.25** | **🚀 88% melhor** |
+| Spring MVC Tradicional             | 5,054ms          | 10,295ms        | 9.71      | Baseline         |
+| Spring WebFlux + Virtual Threads   | 5,064ms          | 10,155ms        | 9.84      | ⚖️ Sem melhoria   |
+| Spring WebFlux Tradicional         | 5,058ms          | 10,161ms        | 9.84      | Baseline         |
 
 **💡 Insights Principais:**
 - ✅ **Virtual Threads revolucionam** aplicações blocking I/O (Spring MVC)
