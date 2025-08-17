@@ -10,19 +10,19 @@
 
 ### 🚀 Teste de Carga (100 Requisições Concorrentes)
 
-| Tecnologia | Tempo Total | RPS | Performance Relativa |
-|------------|-------------|-----|---------------------|
-| **🏆 Kotlin Coroutines (WebFlux)** | **516ms** | **193.79** | **CAMPEÃO (100%)** |
-| **🥈 Java Virtual Threads (MVC)** | **5,478ms** | **18.25** | **10.6x mais lento** |
-| **🥉 Java MVC Tradicional** | **10,295ms** | **9.71** | **19.9x mais lento** |
+| Tecnologia                        | Tempo Total  | RPS        | Performance Relativa |
+| --------------------------------- | ------------ | ---------- | -------------------- |
+| **🏆 Kotlin Coroutines (WebFlux)** | **516ms**    | **193.79** | **CAMPEÃO (100%)**   |
+| **🥈 Java Virtual Threads (MVC)**  | **5,478ms**  | **18.25**  | **10.6x mais lento** |
+| **🥉 Java MVC Tradicional**        | **10,295ms** | **9.71**   | **19.9x mais lento** |
 
 ### ⏱️ Tempo Médio por Requisição (20 Requisições)
 
-| Tecnologia | Tempo Médio | Eficiência |
-|------------|-------------|------------|
-| **🏆 Kotlin Coroutines** | **86ms** | **REI DA VELOCIDADE** |
-| **🥈 Java Virtual Threads** | **5,060ms** | **58.8x mais lento** |
-| **🥉 Java MVC Tradicional** | **5,054ms** | **58.7x mais lento** |
+| Tecnologia                 | Tempo Médio | Eficiência            |
+| -------------------------- | ----------- | --------------------- |
+| **🏆 Kotlin Coroutines**    | **86ms**    | **REI DA VELOCIDADE** |
+| **🥈 Java Virtual Threads** | **5,060ms** | **58.8x mais lento**  |
+| **🥉 Java MVC Tradicional** | **5,054ms** | **58.7x mais lento**  |
 
 ## 🔬 Análise Técnica Profunda
 
