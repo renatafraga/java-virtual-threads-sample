@@ -157,9 +157,15 @@ public class PersonService {
      * Virtual Threads
      */
     public List<Person> getPersonsBlockingIntensive(int count) {
-        return IntStream.range(0, count)
-                .mapToObj(this::createPersonWithIntensiveDelay)
+        List<CompletableFuture<Person>> futures = IntStream.range(0, count)
+                .mapToObj(index -> CompletableFuture.supplyAsync(() -> createPersonWithIntensiveDelay(index)))
                 .toList();
+
+        return CompletableFuture.allOf(futures.toArray(new CompletableFuture[0]))
+                .thenApply(v -> futures.stream()
+                        .map(CompletableFuture::join)
+                        .toList())
+                .join();
     }
 
     /**
@@ -167,7 +173,7 @@ public class PersonService {
      */
     public List<Person> getPersonsBlockingQuick(int count) {
         return IntStream.range(0, count)
-                .mapToObj(this::createPersonWithQuickDelay)
+                .mapToObj(this::createPersonWithDelay) // Usar createPersonWithDelay que é equivalente
                 .toList();
     }
 
@@ -188,11 +194,6 @@ public class PersonService {
 
     private Person createPersonWithIntensiveDelay(int index) {
         simulateBlockingOperation(); // Simula operação blocking mais intensiva (500ms)
-        return createPerson(index);
-    }
-
-    private Person createPersonWithQuickDelay(int index) {
-        simulateQuickBlockingOperation(); // Simula operação blocking rápida (100ms)
         return createPerson(index);
     }
 

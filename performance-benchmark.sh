@@ -654,7 +654,6 @@ add_technical_analysis() {
     echo "Esta análise demonstra que mais tecnologia nem sempre é melhor!" >> "$RESULTS_FILE"
     echo "" >> "$RESULTS_FILE"
 }
-}
 
 # Mostrar resumo simples na tela
 show_simple_summary() {
