@@ -296,8 +296,9 @@ public User getUser() {
 ## 📚 Documentação Complementar
 
 ### 📄 **Arquivos de Análise Disponíveis:**
-- [`BENCHMARK_RESULT.md`](./BENCHMARK_RESULT.md) - Análise técnica completa das Virtual Threads
-- [`KOTLIN_COMPARISON.md`](./KOTLIN_COMPARISON.md) - **NOVO!** Comparativo direto Java vs Kotlin Coroutines  
+- [`BENCHMARK_RESULT.md`](docs/BENCHMARK_RESULT.md) - Análise técnica completa das Virtual Threads
+- [`KOTLIN_COMPARISON.md`](docs/KOTLIN_COMPARISON.md) - Comparativo direto Java vs Kotlin Coroutines  
+- [`PERFORMANCE_INVESTIGATION_REPORT.md`](docs/PERFORMANCE_INVESTIGATION_REPORT.md) - **🔬 NOVO!** Investigação profunda da diferença de performance
 - [`performance-report-20250816-232448.txt`](./performance-report-20250816-232448.txt) - Relatório oficial da execução atual
 
 ### 🎯 **Recomendação Baseada nos Resultados Atuais:**
