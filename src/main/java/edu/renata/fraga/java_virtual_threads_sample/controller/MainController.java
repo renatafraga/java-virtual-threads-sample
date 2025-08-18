@@ -2,7 +2,6 @@ package edu.renata.fraga.java_virtual_threads_sample.controller;
 
 import edu.renata.fraga.java_virtual_threads_sample.model.Person;
 import edu.renata.fraga.java_virtual_threads_sample.service.PersonService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
