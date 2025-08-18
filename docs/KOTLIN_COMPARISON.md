@@ -16,15 +16,40 @@
 | **🥈 Java Virtual Threads (MVC)**  | **5,478ms**  | **18.25**  | **10.6x mais lento** |
 | **🥉 Java MVC Tradicional**        | **10,295ms** | **9.71**   | **19.9x mais lento** |
 
+> **⚠️ ESCLARECIMENTO**: Todos os tempos estão em **milissegundos (ms)**:
+> - **516ms = 0.516 segundos** (Kotlin)
+> - **5,478ms = 5.478 segundos** (Java VT)  
+> - **10,295ms = 10.295 segundos** (Java Tradicional)
+> 
+> **A diferença é REAL - Kotlin é genuinamente 10x mais rápido!**
+
 ### ⏱️ Tempo Médio por Requisição (20 Requisições)
 
-| Tecnologia                 | Tempo Médio | Eficiência            |
-| -------------------------- | ----------- | --------------------- |
-| **🏆 Kotlin Coroutines**    | **86ms**    | **REI DA VELOCIDADE** |
-| **🥈 Java Virtual Threads** | **5,060ms** | **58.8x mais lento**  |
-| **🥉 Java MVC Tradicional** | **5,054ms** | **58.7x mais lento**  |
+| Tecnologia                 | Tempo Médio | Conversão       | Eficiência            |
+| -------------------------- | ----------- | --------------- | --------------------- |
+| **🏆 Kotlin Coroutines**    | **86ms**    | **(0.086 seg)** | **REI DA VELOCIDADE** |
+| **🥈 Java Virtual Threads** | **5,060ms** | **(5.06 seg)**  | **58.8x mais lento**  |
+| **🥉 Java MVC Tradicional** | **5,054ms** | **(5.054 seg)** | **58.7x mais lento**  |
+
+> **💡 NOTA IMPORTANTE**: Todos os valores estão em **milissegundos (ms)**. A diferença não é de unidade, 
+> mas sim de **arquitetura**. Kotlin Coroutines é genuinamente **58x mais rápido** que Java Virtual Threads!
 
 ## 🔬 Análise Técnica Profunda
+
+### 🕐 **ESCLARECIMENTO CRÍTICO: Unidades de Tempo**
+
+**❓ PERGUNTA COMUM**: "Java mostra 5,478ms e Kotlin 516ms - são milissegundos mesmo?"
+
+**✅ RESPOSTA**: SIM, ambos são **milissegundos reais**. A diferença é genuína:
+
+| Medição           | Java Virtual Threads | Kotlin Coroutines | Diferença Real                  |
+| ----------------- | -------------------- | ----------------- | ------------------------------- |
+| **Tempo bruto**   | 5,478ms              | 516ms             | **10.6x mais rápido**           |
+| **Em segundos**   | 5.478 segundos       | 0.516 segundos    | **Meio segundo vs 5 segundos!** |
+| **RPS calculado** | 18.25 req/seg        | 193.79 req/seg    | **10.6x mais throughput**       |
+
+**🎯 CONCLUSÃO**: Kotlin Coroutines processa a mesma carga em **meio segundo** 
+enquanto Java Virtual Threads precisa de **5 segundos completos**!
 
 ### 🧬 **Arquitetura das Soluções**
 
